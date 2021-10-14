@@ -18,26 +18,30 @@ public class BasicProgrammingApp {
         // print greater number among 4 integers......
         if (firstNumber >= secondNumber && firstNumber > thirdNumber) {
             if (firstNumber > forthNumber) {
-                System.out.println(firstNumber + " is greater number");
+                System.out.println(firstNumber + " is greatest number");
             } else {
-                System.out.println(forthNumber + " is greater number");
+                System.out.println(forthNumber + " is greatest number");
 
             }
 
         } else if (secondNumber >firstNumber && secondNumber > thirdNumber) {
             if (secondNumber > forthNumber) {
-                System.out.println(secondNumber + " is greater number");
+                System.out.println(secondNumber + " is greatest number");
             } else {
-                System.out.println(forthNumber + " is greater number");
+                System.out.println(forthNumber + " is greatest number");
 
             }
         }
-        else {
-            System.out.println(thirdNumber + " is greater number");
+        else if(thirdNumber>forthNumber) {
+            System.out.println(thirdNumber + " is greatest number");
+
+        }
+        else{
+            System.out.println(forthNumber + " is greatest number");
 
         }
         // Print smallest integer among 4 integers ......
-        int smallestNumber = 0;
+        int smallestNumber;
         if (firstNumber <= secondNumber && firstNumber < thirdNumber) {
             if (firstNumber < forthNumber) {
                 smallestNumber = firstNumber;
@@ -61,11 +65,15 @@ public class BasicProgrammingApp {
             }
         }
 
-        else {
+        else if(thirdNumber<forthNumber){
             smallestNumber = thirdNumber;
             System.out.println(smallestNumber + " is smallest number");
 
     }
+        else{
+            smallestNumber = forthNumber;
+            System.out.println(smallestNumber + " is smallest number");
+        }
 
     // print all small numbers to the average of four
         int averageOfFour = (firstNumber+secondNumber+thirdNumber+forthNumber)/4;
