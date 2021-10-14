@@ -76,7 +76,7 @@ public class BasicProgrammingApp {
 
  //print all numbers from o to 2000 but when you meet a  number among four numbers, stop loop
         for(int i = 0; i<2000; i++){
-            System.out.println(i);
+            System.out.println("Numbers 0 to 2000 ,stop at any number in that four number " +i);
             if(i == firstNumber||i==secondNumber){
                 break;
             }
@@ -87,7 +87,7 @@ public class BasicProgrammingApp {
 //print all numbers from o to 100; from greatest to smallest AND smallest to greater like : 99-0,.....0-99
         int greaterInSequence = 100;
        int smallerInSequence = 0;
-       for(int i = smallerInSequence; i<greaterInSequence; smallerInSequence++){
+       for(int i = smallerInSequence; i<=greaterInSequence; smallerInSequence++){
            System.out.println(greaterInSequence + " _ " + smallerInSequence);
            greaterInSequence--;
        }
